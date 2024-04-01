@@ -43,3 +43,16 @@ Security Manager:
 
 A security manager is a component of the Java Runtime Environment (JRE) that allows administrators to configure and enforce security policies for Java applications. It defines the access permissions that are granted to Java code running within a Java Virtual Machine (JVM). By restricting the actions that Java code can perform, a security manager helps to prevent malicious or unauthorized behavior.
 In summary, JIT and AOT compilation techniques can improve execution speed by optimizing code, while a security manager helps enforce security policies to protect against malicious or unauthorized actions in Java applications.
+
+
+JDK stands for Java Development Kit. This is the package of tools necessary for developing Java applications. It includes the Java Runtime Environment (JRE), which is necessary to run Java applications, as well as compilers, debuggers, and other development tools. The JDK provides everything developers need to write, compile, and debug Java code.
+
+J2SE stands for Java 2 Platform, Standard Edition. In the late 1990s and early 2000s, Java underwent a significant update known as Java 2. This update introduced major enhancements to the language and platform. The "SE" designation signifies that this edition of Java is intended for standard desktop and server environments, as opposed to specialized environments like mobile or enterprise applications.
+
+Java SE is essentially the same as J2SE but with a simplified and updated naming convention. The "SE" stands for Standard Edition, indicating that it is the standard version of Java intended for general-purpose use. Java SE includes the core Java libraries and APIs needed for developing desktop and server applications.
+
+Java EE stands for Java Platform, Enterprise Edition. This is a set of specifications and APIs aimed at developing enterprise-level Java applications. Java EE builds on top of Java SE and provides additional libraries and frameworks for building distributed, scalable, and robust enterprise applications, typically for web and application servers.
+
+Java ME stands for Java Platform, Micro Edition. This is a deprecated platform intended for developing applications for mobile and embedded devices with limited resources. Java ME provided a scaled-down version of the Java platform tailored for devices like feature phones, PDAs, and embedded systems.
+
+In summary, JDK is the development kit for Java, J2SE was a previous naming convention for the standard edition of Java, which is now referred to as Java SE. Java EE is an edition of Java tailored for enterprise applications, while Java ME was designed for mobile and embedded devices.
