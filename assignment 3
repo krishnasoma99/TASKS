@@ -1,0 +1,93 @@
+1.//float r=2.5f % 2; //0.5 --commented ----> how is this 0.5 comes as result?
+ans
+here % is modulus
+2,2.5 are operands. % is operator
+left and right are both in float(r)
+when 2.5/2 then the reminder is 0.5.
+the % give us reminder so it is 0.5.
+
+2.write a program for given condition
+23 ==> 2+3=5
+54 ==> 5+4=9
+33 ==> 3+3=9
+19 ==> 1+9=10=1+0 // no need for this
+//55,65 - no need
+
+int r=14; //use only literals  (hardcoded values)
+ans 
+class Number 
+{
+	public static void main(String args[])
+	{
+		int[] a = {61, 44 , 36 , 53, 36};
+		
+		for(int rad :a)
+		{
+			int fd= rad /10 ;
+			int ld = rad % 10 ;
+			
+			int sum  = fd + ld ;
+			
+		System.out.println("Sum of the number"+"  "+ rad +"=>" + fd + "+" + ld+ "=>" + sum  );
+			
+		}
+	
+		
+	}
+}
+output:
+Sum of the number  61=>6+1=>7
+Sum of the number  44=>4+4=>8
+Sum of the number  36=>3+6=>9
+Sum of the number  53=>5+3=>8
+Sum of the number  36=>3+6=>9
+
+
+3.c/=2, e%=2
+task 5: decrement optr - demo
+
+
+class Decrement
+
+{
+  public static void main(String[] args) {
+        
+
+
+        int x = 10;
+        int y = 5;
+
+        x /= 2;       //  x = x / 2;
+        y %= 2;      //  y = y % 2;
+//increment
+
+        System.out.println("x after x/: " + x); 
+        System.out.println("y after y%: " + y);
+        System.out.println(y++);
+        System.out.println(y);
+        System.out.println(y++ + ++y - y);
+        // decrement
+        System.out.println(x--);
+        System.out.println(x);
+        System.out.println(--x);
+        
+        
+
+       
+  }
+}
+output:
+x after x/: 5
+y after y%: 1
+1
+2
+2
+5
+4
+3
+
+
+  Logical Operators(AND&&,NOT!,OR||)
+AND&&-If both are true then output is true, if one is false then output will be false.
+NOT!- Output will be reverse of input true-->false,false--->true.
+OR ||- If either of the one is true then ans is true else false.
