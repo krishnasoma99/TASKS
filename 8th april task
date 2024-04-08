@@ -1,0 +1,89 @@
+1.When a Constructor is private -
+A constructor is a special type of method in Java that shares the same name as the class it belongs to. By declaring a constructor as private, we restrict its accessibility outside the class.
+When a constructor is private, we cannot create an object of the class directly using the new keyword.
+
+public class SingletonExample {
+    private SingletonExample() {
+        // Private constructor
+    }
+
+    private static class SingletonHolder {
+        // Inner static class to hold the singleton instance
+        private static final SingletonExample INSTANCE = new SingletonExample();
+    }
+
+    public static SingletonExample getInstance() {
+        return SingletonHolder.INSTANCE;
+    }
+}
+
+
+2.can i make constructor as final 
+The final modifier prevents methods from being modified in subclasses.
+However, constructors are not inherited in Java, so they cannot be overridden or modified by subclasses. Since there is no chance of constructor overriding, there is no need to restrict modification using final.
+So Construcot cannot be assigned as final
+
+class GFG {
+    final GFG() {
+        System.out.println("Hey, you have declared the constructor as final. It's an error.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        GFG obj = new GFG();
+    }
+}
+ERROR
+/tmp/ue9PPWg3ir/Main.java:2: error: modifier final not allowed here
+    final GFG() 
+
+
+3.if we keep int nearby constructor - what happens
+IT requires return type or void
+public class Construct {
+    private String name;
+
+    // Constructor
+    Construct() {
+        System.out.println("Constructor Call:");
+        name = "ak";
+    }
+
+    public static void main(String[] args) {
+        // Constructor is invoked while creating an object of the Main class
+        Construct obj = new Construct();
+        System.out.println("The name is " + obj.name);
+    }
+}
+OUTPUT-
+Constructor Call:
+The name is ak
+
+
+
+4.class employee  in main method - if a create 5 objects - it should print 5 as o/p 
+
+
+
+
+class Employee {
+    // No-argument constructor (optional)
+
+    Employee() {
+    }
+
+    public static void main(String[] args) {
+        // Create five Employee objects
+        Employee emp1 = new Employee();
+        Employee emp2 = new Employee();
+        Employee emp3 = new Employee();
+        Employee emp4 = new Employee();
+        Employee emp5 = new Employee();
+
+        // Print the total number of Employee objects
+        System.out.println("Total number of employees: 5");
+    }
+}
+OUTPUT:
+Total number of employees: 5
